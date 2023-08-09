@@ -8,7 +8,7 @@ function stepsStart() {
         if (x >= 1) {
             i++
         } else {
-            x =  1 
+            x = b + 1 
             b = b + 1
             i = 0
         }
