@@ -38,3 +38,9 @@ for (let index = 0; index < testData.length; index++) {
 
 }
 console.log(`invalid string: ${err} of ${testData.length}`);
+
+// Output: ................
+
+// number 123456
+// number 1234567899
+// invalid string: 3 of 5
