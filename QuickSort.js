@@ -25,9 +25,7 @@ function partion(array, li, ri) {
 
 function swap(array, swapIndexi, swapIndexj) {
     if (swapIndexi == swapIndexj) return
-    const temp = array[swapIndexi]
-    array[swapIndexi] = array[swapIndexj]
-    array[swapIndexj] = temp;
+    [array[swapIndexi], array[swapIndexj]] = [array[swapIndexj], array[swapIndexi]]
 }
 
 const array = [1, 8, 9, 56, 4, 8, 7, 5, 5]
