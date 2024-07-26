@@ -12,9 +12,9 @@ function matrixMultiplication(m1, m2) {
         res[a] = new Array(m2Cols).fill(0)
     }
 
-    for (let i = 0; i < m1Rows; i++) {
-        for (let j = 0; j < m2Cols; j++) {
-            for (let k = 0; k < m1Cols; k++) {
+    for (let i = 0; i < m1Rows; i++) { //to get the m1rows
+        for (let j = 0; j < m2Cols; j++) {//to multiply m1 rows for each column in the m2
+            for (let k = 0; k < m1Cols; k++) { // to get each element
                 res[i][j] += m1[i][k] * m2[k][j]
             }
         }
