@@ -52,6 +52,25 @@ Trie.prototype.commonPrefix = function (text) {
     }
     return text.length
 }
+Trie.prototype.Print = function () {
+    let node = this.trie
+    const strs = []
+    const print = function (k, s, n) {
+        for (const e of k) {
+            if (n[e].isWord) {
+                strs.push(s + e)
+            }
+            if (n[e]) {
+                const skeys = Object.keys(n[e])
+                print(skeys, s + e, n[e])
+            }
+
+        }
+    }
+    const keys = Object.keys(node)
+    print(keys, "", node)
+    return strs
+}
 
 function main() {
     console.time("aaa")
